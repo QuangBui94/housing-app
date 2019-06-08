@@ -1,0 +1,36 @@
+.first-heading {
+    display: flex;
+    flex-direction: column;
+
+    &--primary {
+        color: var(--color-grey-light-1);
+        font-size: 4rem;
+        font-family: var(--font-display);
+    }
+
+    &--secondary {
+        color: var(--color-primary);
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: normal;
+    }
+}
+
+.second-heading {
+    color: var(--color-primary-dark-1);
+    font-size: 4rem;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.third-heading {
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.fourth-heading {
+    color: var(--color-primary-dark-1);
+}
+

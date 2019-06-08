@@ -1,0 +1,26 @@
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--primary {
+    color: var(--color-grey-light-1);
+    background-color: var(--color-primary);
+    font-family: var(--font-display);
+    transition: 0.2s ease;
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}

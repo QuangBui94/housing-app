@@ -1,0 +1,30 @@
+.feature {
+    padding: 15rem 12rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-gap: 8rem;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: repeat(2, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1rem;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 4.5rem;    
+        fill: var(--color-primary);
+    }
+
+    &__text {
+        grid-column: 2 / -1;
+        align-self: baseline;
+        font-size: 1.7rem;
+        color: var(--color-primary-dark-1);
+    }
+}

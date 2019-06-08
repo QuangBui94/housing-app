@@ -1,0 +1,133 @@
+.overview {
+    display: flex;
+    flex: 0 0 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(#101d2ce5, #101d2ce0), url(../img/hero.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6rem 12rem;
+
+    &__logo {
+        align-self: center;
+        width: 15rem;
+        flex: 0 0 35%;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__short-call {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 25%;
+        margin-bottom: auto;
+        align-items: baseline;
+    }
+
+    &__gettouch {
+        display: grid;
+        justify-items: center;
+
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 8rem min-content;
+
+    }
+
+    &__special-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-grey-light-2);
+        position: relative;
+        grid-column: 1 / -1;
+        justify-self: stretch;
+
+        &::before {
+            display: block;
+            content: "";
+            height: 1px;
+            width: 45%;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: -1rem;
+            margin-right: 2px;
+            background-color: var(--color-grey-light-1);
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            height: 1px;
+            width: 45%;
+            position: absolute;
+            transform: translateY(50%);
+            top: 50%;
+            right: -1rem;
+            background-color: var(--color-grey-light-1);
+        }
+    }
+
+    &__company {
+        max-height: 2.5rem;
+        filter: brightness(70%);
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.realtors {
+    background-color: var(--color-secondary);
+    display: grid;
+    flex: 1;
+
+    grid-template-columns: 25rem;
+    grid-template-rows: 8rem repeat(3, 13rem);
+    justify-content: center;
+    align-content: center;
+
+    &__top {
+        justify-self: center;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: min-content;
+        justify-content: center;
+        grid-column-gap: 2rem;
+    }
+
+    &__photo {
+        width: 8rem;
+        border-radius: 50%;
+        grid-row: 1 / -1;
+    }
+
+    &__caption {
+        display: grid;
+        grid-template-rows: 55% 1fr;
+        align-content: center;
+    }
+
+    &__name {
+        color: var(--color-grey-light-1);
+        font-size: 1.8rem;
+        align-self: flex-end;
+    }
+
+    &__sold {
+        color: var(--color-grey-light-2);
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+}
