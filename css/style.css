@@ -189,6 +189,7 @@ html {
     grid-row-gap: 1rem;
     align-items: center; }
   .feature__icon {
+    width: 6rem;
     height: 4.5rem;
     fill: var(--color-primary); }
   .feature__text {
@@ -283,16 +284,19 @@ html {
     padding: 3rem;
     grid-gap: 2rem; }
   .home__item {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    grid-template-rows: repeat(2, max-content);
-    align-self: center; }
+    height: 6rem;
+    display: flex;
+    /* grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, max-content); */
+    align-self: center; 
+    align-items: center;
+  }
     .home__item--text {
       color: var(--color-primary-dark-1); }
     .home__item--logo {
-      width: 4rem;
+      width: 2rem;
       fill: var(--color-primary);
-      margin-right: 0.5rem; }
+      margin-right: 1rem; }
   .home__contact {
     grid-row: 3;
     grid-column: 1;
